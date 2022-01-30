@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Fonts Imports -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+	<!-- Styles Imports -->
+	<link rel="stylesheet" type="text/css" href="./styles/main.css">
+	<link rel="stylesheet" type="text/css" href="./styles/contato.css">
+	<title>:: Contato - Barbearia Alura ::</title>
+</head>
+<body>
+	<header>
+		<div class="headerBox">
+			<h1>
+			<img src="./assets/logo.png" al = "Logo da Barbearia Alura">
+			</h1>
+
+			<!-- NAV BAR -->
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>	
+	</header>
+
+	<!-- MAIN PAGE -->	
+	<main>
+		<form>
+			<fieldset>
+				<legend>Informações básicas</legend>
+
+				<label for="nome">Nome</label>
+				<input type="text" name="nome">
+
+				<label for="email">E-mail</label>
+				<input type="email" name="email">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" name="telefone">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="50" rows="15" name="mensagem"></textarea>
+			</fieldset>
+
+			<fieldset>
+				<legend>Forma de contato</legend>
+					<div>
+						<input type="radio" name="contato" value="email">
+						<label for="contatoEmail">E-mail</label>
+					</div>
+
+					<div>
+						<input type="radio" name= "contato" value="whatsapp">
+						<label for="contatoWpp">WhatsApp</label>
+					</div>
+					
+					<div>
+						<input type="radio" name ="contato" value="telefone">
+						<label for="contatoTelefone">Telefone</label>
+					</div>					
+			</fieldset>
+
+			<fieldset>
+				<legend>Horário de atendimento</legend>
+
+				<select>
+					<option>Manhã</option>
+					<option>Tarde</option>
+					<option>Noite</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<legend>Newsletter</legend>
+
+				<div>
+					<input type="checkbox" name="newsletter">
+					<label for="newsletter">Vocês gostaria de receber novidades em seu e-mail?</label>
+				</div>
+				
+			</fieldset>
+
+			<button type="submit" value="Enviar">Enviar</button>
+		</form>		
+	</main>
+
+	<!-- FOOTER -->
+	<footer>
+			<img src="./assets/logo-branco.png">
+			<p>Copyright &copy; 2022 - Barbearia Alura</p>
+	</footer>
+</body>
+</html>

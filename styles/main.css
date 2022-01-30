@@ -1,0 +1,212 @@
+/* RESET CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MAIN CONFIG */
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* // HEADER // */
+
+header {
+	background: #ddd;
+}
+
+.headerBox {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+/* // NAV // */
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 20px;
+}
+
+nav a {
+	text-transform:  uppercase;
+	color:  #000;
+	font-weight: bolder;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color:  #c78c19;
+	text-decoration: underline;
+}
+
+/* // IMG // */
+#banner img{
+	width: 100%;
+	opacity: 0.9;
+}
+
+/* // BOX SECTION PADRÃO // */
+.box {
+	padding: 2em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+
+/* // TITUTLO PADRÃO // */
+.titulo {
+	text-align: center;
+	font-size: 2em;
+	margin:  0 0 1em;
+	clear: left;
+}
+
+/* // SECTIONS SOBRE // */
+.sobre img {
+	width: 135px;
+	float:  left;
+	margin: 0 15px 15px 0;
+}
+
+.sobre p {
+	margin: 0 0 1.2em;
+}
+
+.sobre p .nomeEmpresa {
+	font-weight: bolder;
+}
+
+.sobre p .missaoEmpresa {
+	font-style: italic;
+}
+
+/* // SECTION LOCALIZAÇÃO // */
+.mapa h3 {
+	text-align: center;
+	font-size: 1.7em;
+	margin:  0 0 1em;
+	clear: left;
+}
+
+.mapa p {
+	text-align: center;
+	margin: 0 0 0.5em 0;
+}
+
+/* // SECTION BENEFÍCIOS // */
+.beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.beneficios ul {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.beneficios ul > li {
+	line-height: 1.5em;
+}
+.beneficios	ul > li:first-child {
+	font-weight: bold;
+}
+
+.beneficios img {
+	width: 60%;
+}
+
+.beneficios	iframe {
+	margin: 2em auto;
+}
+
+/* // FOOTER // */
+footer {
+	background-color: #111;
+	text-align:  center;
+	padding: 40px 0;
+}
+
+footer p {
+	color:  #fff;
+	font-size: 13px;
+	margin:  20px 0 0 0;
+}
+
+/* // MOBILE // */
+@media screen and (max-width: 480px) {
+	.headerBox, #banner, .box, iframe {
+		width: 100%;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+		padding-bottom: 0.7em;
+	}
+
+	nav ul {
+		text-align: center;
+	}
+
+	.box, .beneficios, #banner, .beneficiosBox {
+		width: 96%;
+		margin: 0 2% 0 2%;
+		text-align: center;
+	}
+}
